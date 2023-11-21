@@ -26,7 +26,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            linode/linode-blockstorage-csi-driver
+            luthermonson/linode-blockstorage-csi-driver
           tags: |
             type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
             type=semver,pattern={{raw}},value=${{ github.ref_name }}
